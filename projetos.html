@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Companhia Vale de Servicos</title>
+ <link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header>
+  <div class="container">
+    <img src="images/logo.png" alt="Logo Nome da Organização" id="logo" />
+
+    <!-- Botão hambúrguer (mobile) -->
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      ☰
+    </button>
+
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Início</a></li>
+
+        <!-- Item com submenu -->
+        <li class="has-submenu">
+          <a href="projetos.html">Projetos</a>
+          <ul class="submenu">
+            <li><a href="projetos.html#sobreaempresa">Sobre a Empresa</a></li>
+            <li><a href="projetos.html#projetos">Projetos</a></li>
+            <li><a href="projetos.html#Contato">Contato</a></li>
+          </ul>
+        </li>
+
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main class="container">
+    <h1>Projetos</h1>
+    <p>Conheça alguns dos nossos principais projetos.</p>
+
+    <section>
+      <h2>Manutencao em Bombas</h2>
+      <img src="images/bombas.jpg" alt="Manutencao em Bombas" width="400" />
+      <p>Manutencao em Bombas em Geral.</p>
+    </section>
+
+    <section>
+      <h2>Manutencao em Servos</h2>
+      <img src="images/servos.jpg" alt="Manutencao em Servo Motores" width="400" />
+      <p>Revisao de Servos em Geral.</p>
+    </section>
+
+    <section>
+      <h2>Manutencao em Motores</h2>
+      <img src="images/motores.jpg" alt="Manutencao em Motores" width="400" />
+      <p>Revisao de Motores em Geral.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="ano"></span> Companhia Vale de Servicos — Todos os direitos reservados.</p>
+    </div>
+    <script>
+      document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+
+  <script src="js/app.js" defer></script>
+  
+</body>
+</html>
